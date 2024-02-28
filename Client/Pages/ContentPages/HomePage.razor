@@ -1,0 +1,43 @@
+﻿@page "/home/dashboard"
+@using Syncfusion.Licensing
+@layout MainLayout
+
+
+<TableBanner />
+<GeneralDepartmentPage />
+<DepartmentPage />
+<BranchPage />
+<CityPage />
+<CountryPage />
+<TownPage />
+<UserPage />
+<DoctorPage />
+<OvertimePage />
+<SanctionPage />
+<VacationPage />
+<EmployeePage /> 
+<SanctionTypePage />
+<OvertimeTypePage />
+<VacationTypePage />
+<ProfilePage />
+
+@code {
+    [CascadingParameter] public Task<AuthenticationState> AuthenticationState { get; set; }
+    protected async override Task OnInitializedAsync()
+    {
+        await CheckUserAuthentication();
+    }
+
+    private async Task CheckUserAuthentication()
+    {
+        var user = (await AuthenticationState).User;
+        bool isUserAuthenticated = user.Identity!.IsAuthenticated;
+        if (!isUserAuthenticated)
+            NavManager.NavigateTo("/identity/account/login");
+    }
+
+    public HomePage()
+    {
+        SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1NAaF1cXmhKYVdpR2Nbe05yfldFal1RVAciSV9jS3pTdEdlWX1cc3VVQmFYVg==");
+    }
+}

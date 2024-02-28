@@ -1,0 +1,85 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>35a0ef9d-90fd-4744-9a87-85ce24a12f46</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\marwa\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.bundle.js" />
+    <Content Remove="C:\Users\marwa\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.bundle.js.map" />
+    <Content Remove="C:\Users\marwa\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.bundle.min.js" />
+    <Content Remove="C:\Users\marwa\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.bundle.min.js.map" />
+    <Content Remove="C:\Users\marwa\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.esm.js" />
+    <Content Remove="C:\Users\marwa\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.esm.js.map" />
+    <Content Remove="C:\Users\marwa\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.esm.min.js" />
+    <Content Remove="C:\Users\marwa\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.esm.min.js.map" />
+    <Content Remove="C:\Users\marwa\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.js" />
+    <Content Remove="C:\Users\marwa\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.js.map" />
+    <Content Remove="C:\Users\marwa\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.min.js" />
+    <Content Remove="C:\Users\marwa\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.min.js.map" />
+    <Content Remove="libman.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Blazored.LocalStorage" Version="4.4.0" />
+    <PackageReference Include="bootstrap" Version="5.3.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.0" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
+    <PackageReference Include="Syncfusion.Blazor.Buttons" Version="24.2.7" />
+    <PackageReference Include="Syncfusion.Blazor.DropDowns" Version="24.2.7" />
+    <PackageReference Include="Syncfusion.Blazor.Grid" Version="24.2.7" />
+    <PackageReference Include="Syncfusion.Blazor.Navigations" Version="24.2.7" />
+    <PackageReference Include="Syncfusion.Blazor.Popups" Version="24.2.7" />
+    <PackageReference Include="Syncfusion.Blazor.Themes" Version="24.2.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BaseLibrary\BaseLibrary.csproj" />
+    <ProjectReference Include="..\ClientLibrary\ClientLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\background\" />
+    <Folder Include="wwwroot\images\Profile\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\ContentPages\EmployeePages\AddOrUpdateEmployeePage.razor" />
+    <None Include="Pages\ContentPages\EmployeePages\EmployeeDetailPage.razor" />
+    <None Include="Pages\ContentPages\EmployeePages\EmployeePage.razor" />
+    <None Include="Pages\ContentPages\LocationPages\CityDialog.razor" />
+    <None Include="Pages\ContentPages\LocationPages\CityPage.razor" />
+    <None Include="Pages\ContentPages\LocationPages\CountryDialog.razor" />
+    <None Include="Pages\ContentPages\LocationPages\CountryPage.razor" />
+    <None Include="Pages\ContentPages\LocationPages\TownDialog.razor" />
+    <None Include="Pages\ContentPages\LocationPages\TownPage.razor" />
+    <None Include="Pages\ContentPages\UserPages\UserDialog.razor" />
+    <None Include="Pages\ContentPages\UserPages\UserPage.razor" />
+    <None Include="Pages\OtherPages\DoctorPages\DoctorDialog.razor" />
+    <None Include="Pages\OtherPages\DoctorPages\DoctorPage.razor" />
+    <None Include="Pages\OtherPages\OvertimePages\OvertimeDialog.razor" />
+    <None Include="Pages\OtherPages\OvertimePages\OvertimePage.razor" />
+    <None Include="Pages\OtherPages\OvertimePages\OvertimeTypeDialog.razor" />
+    <None Include="Pages\OtherPages\OvertimePages\OvertimeTypePage.razor" />
+    <None Include="Pages\OtherPages\SanctionPages\SanctionDialog.razor" />
+    <None Include="Pages\OtherPages\SanctionPages\SanctionPage.razor" />
+    <None Include="Pages\OtherPages\SanctionPages\SanctionTypeDialog.razor" />
+    <None Include="Pages\OtherPages\SanctionPages\SanctionTypePage.razor" />
+    <None Include="Pages\OtherPages\VacationPages\VacationDialog.razor" />
+    <None Include="Pages\OtherPages\VacationPages\VacationPage.razor" />
+    <None Include="Pages\OtherPages\VacationPages\VacationTypeDialog.razor" />
+    <None Include="Pages\OtherPages\VacationPages\VacationTypePage.razor" />
+    <None Include="Pages\ContentPages\ProfilePages\ProfilePage.razor" />
+  </ItemGroup>
+
+</Project>
