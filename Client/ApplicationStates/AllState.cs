@@ -1,9 +1,11 @@
-﻿namespace Client.ApplicationStates
+﻿using System;
+
+namespace Client.ApplicationStates
 {
     public class AllState
     {
         //Scope action
-        public Action? Action { get; set; }
+        public Action Action { get; set; }
 
         // General Department
         public bool ShowGeneralDepartment { get; set; }
@@ -29,7 +31,7 @@
         {
             ResetAllDepartments();
             ShowBranch = true;
-            Action?.Invoke();
+            Action.Invoke();
         }
 
         //Country
@@ -38,7 +40,7 @@
         {
             ResetAllDepartments();
             ShowCountry = true;
-            Action?.Invoke();
+            Action.Invoke();
         }
 
         //City
@@ -47,7 +49,7 @@
         {
             ResetAllDepartments();
             ShowCity = true;
-            Action?.Invoke();
+            Action.Invoke();
         }
 
         //Town
@@ -56,7 +58,7 @@
         {
             ResetAllDepartments();
             ShowTown = true;
-            Action?.Invoke();
+            Action.Invoke();
         }
 
         //User
@@ -65,7 +67,7 @@
         {
             ResetAllDepartments();
             ShowUser = true;
-            Action?.Invoke();
+            Action.Invoke();
         }
 
         //Doctor
@@ -74,7 +76,7 @@
         {
             ResetAllDepartments();
             ShowHealth = true;
-            Action?.Invoke();
+            Action.Invoke();
         }
 
         //Overtime
@@ -83,7 +85,7 @@
         {
             ResetAllDepartments();
             ShowOvertime = true;
-            Action?.Invoke();
+            Action.Invoke();
         }
 
         //Overtime Type
@@ -92,7 +94,7 @@
         {
             ResetAllDepartments();
             ShowOvertimeType = true;
-            Action?.Invoke();
+            Action.Invoke();
         }
 
         //Sanction
@@ -101,7 +103,7 @@
         {
             ResetAllDepartments();
             ShowSanction = true;
-            Action?.Invoke();
+            Action.Invoke();
         }
 
         //Sanction Type
@@ -110,7 +112,7 @@
         {
             ResetAllDepartments();
             ShowSanctionType = true;
-            Action?.Invoke();
+            Action.Invoke();
         }
 
         //Vacation
@@ -119,7 +121,7 @@
         {
             ResetAllDepartments();
             ShowVacation = true;
-            Action?.Invoke();
+            Action.Invoke();
         }
 
         //Vacation Type
@@ -128,7 +130,7 @@
         {
             ResetAllDepartments();
             ShowVacationType = true;
-            Action?.Invoke();
+            Action.Invoke();
         }
 
         //Employee
@@ -137,7 +139,7 @@
         {
             ResetAllDepartments();
             ShowEmployee = true;
-            Action?.Invoke();
+            Action.Invoke();
         }
 
         //Show User Profile
@@ -146,7 +148,7 @@
         {
             ResetAllDepartments();
             ShowUserProfile = true;
-            Action?.Invoke();
+            Action.Invoke();
         }
 
         private void ResetAllDepartments()

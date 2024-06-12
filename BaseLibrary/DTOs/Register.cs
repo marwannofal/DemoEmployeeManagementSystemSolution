@@ -8,11 +8,11 @@ namespace BaseLibrary.DTOs
         [Required]
         [MinLength(5)]
         [MaxLength(100)]
-        public string? Fullname { get; set; }
+        public string Fullname { get; set; }
 
         [Required]
         [Compare(nameof(Password))]
         [DataType(DataType.Password)]
-        public string? ConfirmPassword { get; set; }
+        public string ConfirmPassword { get; set; }
     }
 }

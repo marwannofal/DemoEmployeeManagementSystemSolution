@@ -8,11 +8,11 @@ namespace BaseLibrary.DTOs
         [Required]
         [EmailAddress]
         [DataType(DataType.EmailAddress)]
-        public string? Email { get; set; }
+        public string Email { get; set; }
 
         [Required]
         [PasswordPropertyText]
         [DataType(DataType.Password)]
-        public string? Password { get; set; }
+        public string Password { get; set; }
     }
 }

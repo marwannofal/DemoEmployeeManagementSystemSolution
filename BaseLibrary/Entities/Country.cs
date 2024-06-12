@@ -6,6 +6,6 @@ namespace BaseLibrary.Entities
     {
         //One to many relationship with City
         [JsonIgnore]
-        public List<City>? Cities { get; set; }
+        public List<City> Cities { get; set; }
     }
 }

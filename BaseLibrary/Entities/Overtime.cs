@@ -10,7 +10,7 @@ namespace BaseLibrary.Entities
         public int NumberOfDays => (EndDate - StartDate).Days;
 
         // Many to one relationship with Vacation Type
-        public OvertimeType? OvertimeType { get; set; }
+        public OvertimeType OvertimeType { get; set; }
         [Required]
         public int OvertimeTypeId { get; set; }
     }

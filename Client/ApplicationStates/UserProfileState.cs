@@ -1,10 +1,11 @@
-﻿using BaseLibrary.DTOs;
+﻿using System;
+using BaseLibrary.DTOs;
 
 namespace Client.ApplicationStates
 {
     public class UserProfileState
     {
-        public Action? Action { get; set; }
+        public Action Action { get; set; }
         public UserProfile userProfile { get; set; } = new();
         public void ProfileUpdated() => Action!.Invoke();
     }

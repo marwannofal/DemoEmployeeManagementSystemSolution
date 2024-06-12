@@ -6,6 +6,6 @@ namespace BaseLibrary.Entities
     {
         //Many to one relationship with Overtime
         [JsonIgnore]
-        public List<Overtime>? Overtimes { get; set; }
+        public List<Overtime> Overtimes { get; set; }
     }
 }

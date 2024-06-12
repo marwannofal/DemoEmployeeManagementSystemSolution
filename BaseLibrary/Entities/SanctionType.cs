@@ -6,6 +6,6 @@ namespace BaseLibrary.Entities
     {
         //Many to one relationship with Vacation
         [JsonIgnore]
-        public List<Sanction>? Sanctions { get; set; }
+        public List<Sanction> Sanctions { get; set; }
     }
 }

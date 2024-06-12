@@ -10,6 +10,8 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Syncfusion.Blazor.Popups;
 using Syncfusion.Blazor;
 using Client.ApplicationStates;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");

@@ -18,7 +18,7 @@ namespace BaseLibrary.Entities
         public string TelephoneNumber { get; set; } = string.Empty;
         [Required]
         public string Photo { get; set; } = string.Empty;
-        public string? Other { get; set; }
+        public string Other { get; set; }
 
         // many to one Relationship with Branch
         public Branch? Branch { get; set; }
